@@ -7,3 +7,11 @@ institute = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.X
 abstract = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.CLASS_NAME, "abstract-text"))).text
 ~~~
 2. 爬取过程中会存在数据丢失的可能，尚未排查出原因，请读者自行解决。
+3. 该项目使用Edge浏览器，若无法启动浏览器，则为浏览器驱动版本错误，请自行检查浏览器版本并下载相应的驱动程序，若使用其他浏览器，请读者自行更改源码，以下是常见的浏览器驱动下载网页：
+> Firefox浏览器驱动：https://link.zhihu.com/?target=https%3A//github.com/mozilla/geckodriver/releases
+> 
+> Chrome浏览器驱动：https://registry.npmmirror.com/binary.html?path=chromedriver/
+> 
+> IE浏览器驱动IEDriverServer：https://link.zhihu.com/?target=http%3A//selenium-release.storage.googleapis.com/index.html
+> 
+> Edge浏览器驱动MicrosoftWebDriver：https://link.zhihu.com/?target=https%3A//developer.microsoft.com/en-us/microsoft-edge/tools/webdriver
